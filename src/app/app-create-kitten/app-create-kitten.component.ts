@@ -7,7 +7,7 @@ import { Kitten } from '../models/kitten.model';
   styleUrls: ['./app-create-kitten.component.css'],
 })
 export class AppCreateKittenComponent implements OnInit {
-  kitten: Kitten = new Kitten('', '', '', '');
+  kitten: Kitten = new Kitten('', '', '', '', true);
 
   @Output()
   sendKitten: EventEmitter<Kitten> = new EventEmitter();

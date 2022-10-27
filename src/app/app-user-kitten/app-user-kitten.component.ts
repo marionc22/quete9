@@ -10,7 +10,7 @@ export class AppUserKittenComponent implements OnInit {
 
 
   @Input()
-myKittens : Array <Kitten> = [new Kitten ("","","",""),]
+myKittens : Array <Kitten> = [new Kitten ("","","","", true),]
 
   constructor() {  }
 
