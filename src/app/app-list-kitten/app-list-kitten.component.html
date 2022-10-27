@@ -1,0 +1,12 @@
+<h1>Chatons à l'adoption</h1>
+<ul>
+    <li *ngFor="let kitty of kitten; index as i">
+        <p>
+            {{ kitty.name }} {{ kitty.race }} {{ kitty.birthday }}
+        </p>
+        <img src="{{ kitty.photo }}" width="300px" />
+        <button type="button" (click)="removeKitten(kitty, i)">Adopte moi</button>
+    </li>
+</ul>
+<app-app-create-kitten (sendKitten)="onReceiveNewKitten($event)"></app-app-create-kitten>
+<app-app-user-kitten [myKittens]="myKittens"></app-app-user-kitten>

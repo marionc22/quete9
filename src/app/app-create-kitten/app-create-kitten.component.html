@@ -1,0 +1,11 @@
+<form (ngSubmit)="createKitten()">
+    <label for="nom">nom :</label>
+    <input id="nom" type=" text " name="nom" [(ngModel)]="kitten.name" />
+    <label for="race ">race :</label>
+    <input id="race " type=" text " name="race" [(ngModel)]="kitten.race" />
+    <label for="date de naissance ">date de naissance :</label>
+    <input id="date de naissance " type=" text " name="date de naissance" [(ngModel)]="kitten.birthday" />
+    <label for="photo ">photo :</label>
+    <input id="photo  " type=" text " name="photo " [(ngModel)]="kitten.photo" />
+    <button type="submit">envoyer</button>
+</form>
